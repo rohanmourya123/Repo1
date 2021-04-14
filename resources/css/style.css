@@ -1,0 +1,664 @@
+/*------------------------------*/
+/* Basic components  */
+/*------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+.clearfix{zoom:1}
+.clearfix {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/*------------------------------*/
+/* Resuable components  */
+/*------------------------------*/
+
+section{
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+.box{
+    padding: 2%;
+}
+.box p{
+    font-size: 120%;
+    line-height: 145%;
+}
+/*------------------------------*/
+/* pargraphs  */
+/*------------------------------*/
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*----------Features--------*/
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/*----------links--------*/
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 2px solid orange;
+    transition: border-bottom 0.2s, color: 0.2s;
+
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/*----------icons--------*/
+
+.icon-big{
+    font-size: 400%;
+    display: block;
+    align-content: center;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: orange;
+    font-size: 120%;
+    
+    /* secrets to align text and icons */
+    
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+/*------------------------------*/
+/* meals img*/
+/*------------------------------*/
+
+.meal-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+
+.meal-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+   
+}
+.meal-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: trannsform 0.5s, opacity: 0.5s;
+    opacity: 0.7;
+    
+}
+.meal-photo img:hover {
+    transform: scale(1.03);
+}
+
+.section-meals{
+    padding: 0;
+    
+}
+
+
+/*------------------------------*/
+/*  Header  */
+/*------------------------------*/
+
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(img/hero-min.jpg);
+   background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+    background-attachment: fixed;
+    
+
+}
+
+h1,h2,h3{
+   
+    font-weight: 300%;
+    text-transform: uppercase;
+    
+    
+    
+}
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 50px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 35px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: orange;
+    content:" ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3{
+    font-size: 140%;
+    margin-bottom: 15px;
+   
+    
+}
+
+
+.hero-text-box{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+   width: 1140px;
+    transform: translate(-50%,-50%);
+    
+}
+
+.logo,
+.logo-black{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 15px;
+}
+
+.logo-black{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+
+/* main nav */
+
+.main-nav{
+    display: flex;
+float: right;
+    list-style: none;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 55px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 125%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+   border-bottom: 2px solid orange;
+}
+
+/* mobile-navi*/
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon li  {
+  
+    text-decoration: none;
+    color: rgba(142, 141, 141, 0.98);
+    background-color: rgb(142, 141, 141);
+}
+
+.mobile-nav-icon li a:link,
+.mobile-nav-icon li a:visited{
+  
+    text-decoration: none;
+    color: white;
+    background-color: rgba(142, 141, 141, 0.98);
+    font-size: 15px;
+    padding: 0;
+    margin-top: 2px;
+}
+.sticky{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 2px #b9b7b7;
+    z-index: 9999;
+    
+}
+
+.sticky .main-nav li{ margin-top: 18px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #0b0000;
+   padding: 15px 0;
+    
+}
+.sticky .mobile-nav-icon li { text-decoration: none;}
+
+.sticky .logo{display: none;}
+.sticky .logo-black{
+    display: block;
+}
+
+/*------------------------------*/
+/* Button components  */
+/*------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+text-decoration: none;
+    font-weight: 300%;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s,color 0.2s;
+    color: black;
+   
+}
+.btn:hover,
+.btn:active
+input[type=submit]{
+    background-color: orange;
+    transition: background-color 0.2s, border 0.2s,color 0.2s;
+    color: black;
+    
+}
+.btn-full:link{
+     background-color: orange;
+    border: 1px solid orange;
+   color: white;
+    margin-right: 20px;
+}
+    btn-full:visited {
+    background-color: orange;
+     border: 1px solid orange;
+   color: white;
+    margin-right: 20px;
+}
+
+.btn-gost:link,
+.btn-gost:visited{
+    border: 1px solid orange;
+    color: white;
+   
+    
+}
+
+.btn-full:hover,
+.btn-full:active ,input[type=submit]:hover,input[type=submit]:active {
+    
+     border: 1px solid orange;
+   color: white;
+    background-color: orange;
+    
+}
+
+.btn-gost:hover,
+.btn-gost:active {
+    border: 1px solid orange;
+    color: black;
+  
+    
+}
+
+ 
+.plan-box a{
+   color: black;
+}
+
+
+/*-----how it works-----*/
+
+.section-steps{
+    background-color: rgba(227, 227, 227, 0.99);
+}
+    
+
+.steps-box:first-child{
+ 
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+
+.steps-box:last-child{
+    
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+
+.app-screen{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 0;
+}
+
+.works-steps{
+    margin-bottom: 40px;
+    margin-right: 30%;
+    margin-left: 0;
+    margin-top: 50px;
+   
+}
+.works-steps:last-of-type{
+    margin-bottom: 80px;
+}
+.works-steps div{
+    color: orange;
+    border: 2px solid orange;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    font-size: 150%;
+ margin-right: 40px;   
+}
+    
+
+ /*-----cities---*/
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-feauter{
+    margin-bottom: 5px;
+}
+
+
+
+   
+    /*------Testimonials----*/
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.81),rgba(0,0,0,0.8)),url(img/back-min.jpg);
+    background-size: cover;
+    color: #fff;
+    
+    background-attachment: fixed;
+    
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+blockquote:before{
+   
+    font-size: 300%;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+   text-decoration: none;
+    
+    
+} 
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    margin-left: 5px;
+    
+}
+
+cite img{
+    height: 50px;
+    border-radius: 30%;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width 100%;
+    margin-left: 100px;
+    padding: 20px;
+    align-content: center;
+    box-shadow: 0 2px 2px #e5e5e5;
+  
+}
+
+.section-plan{
+    background-color: #f4f4f4;
+    
+}
+
+.plan-box div:first-child{
+    text-align: center;
+    background-color: rgba(240, 235, 235, 0.95);
+    
+}
+.plan-box div:last-of-type{
+    text-align: center;
+    padding-left: 20px;
+    color: black;
+    
+
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    
+    
+}
+
+.plan-price{
+    font-size:170%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    
+    color: orange;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+    
+}
+
+.plan-price span{
+    font-size: 70%;
+    font-weight: 300;
+}
+
+.planl-box ul{
+    padding: 5px 0;
+    display: inline-block;
+}
+
+
+/*-----form -----*/
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 120%;
+    color: #383737;
+    
+}
+
+input,select,textarea{
+    width: 100%;
+    padding: 6px;
+    border-radius: 3px:
+    
+}
+
+textarea{
+    
+    height: 100px;
+}
+
+input[type=checkbox]{
+    float: left;
+    display: inline-block;
+}
+*:focus{outline: none;}
+
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.81);
+    padding: 30px;
+    font-size: 15px;
+}
+
+.footer-nav{
+   list-style: none;
+float: left;
+
+}
+
+.Social-links {
+
+    list-style: none;
+float: right;
+
+}
+
+
+.footer-nav li,
+.Social-links li{
+    
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.footer-nav li:last-child,
+.Social-links li:last-child{
+    
+    
+    margin-right: 0;
+    
+}
+    
+    
+    .footer-nav li a:link,
+.footer-nav li a:visited,
+    .Social-links li a:link,
+.Social-links li a:visited{
+    
+    text-decoration: none;
+    transition: color 0.2s;
+    border: 0;
+    color: #8e8989;
+    
+}
+
+footer p{
+    color: #8e8989;
+    text-align: center;
+   
+}
+    
+    
+   .footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+    
+ .Social-links li a:hover,
+.Social-links li a:active{
+    font-size: 160%;
+}
+
+/*----            */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-4{
+    animation-duration: 1s;
+}
+
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated{
+    opacity: 1;
+}

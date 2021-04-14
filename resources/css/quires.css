@@ -1,0 +1,205 @@
+
+/*--- small phones 0-to 480px; */
+@media only screen and (max-width: 480px){
+    body{font-size: 10px;}
+    section{padding:  22px 0;}
+    .contact-form{width: 100%;}
+    .box p{
+    font-size: 100%;
+    line-height: 135%;
+}
+   .hero-text-box a.btn-full,
+     .hero-text-box a.btn-gost{
+        font-size: 80%;
+        margin-left: 1px;
+         
+    }
+    
+}
+
+
+/*--- small phones to small tablets from 481-to 767px; */
+@media only screen and (max-width: 767px){
+    
+    
+    body{font-size: 12px;}
+    section{padding:  30px 0;}
+    .row,
+    .hero-text-box{padding: 0 4%;}
+
+    .col{
+        margin: 0 0 4% 0;
+        width: 100%;}
+    .main-nav {display: none;}
+    
+    .mobile-nav-icon {display: inline-block;
+    }
+    
+    .mobile-nav li a 
+    {display: block;
+        
+    }
+    
+    
+   
+
+    
+    
+    .long-copy{
+        width: 60%;
+        margin-left: 0%;
+    }
+    
+    .long-copy p{ font-size: 130%;}
+    
+    h1{font-size: 180%;}h2{font-size: 150%;}
+    
+     
+.works-steps div{
+   
+    
+
+    height: 30px;
+    width: 30px;
+   
+    padding: 3px;
+    
+    font-size: 90%;
+ margin-right: 10px;   
+}
+    .works-steps{margin-bottom: 16px;}
+    .works-step div p{font-size: 90%;
+    align-content: center;
+        text-align: center;
+        margin-left:0%;
+    }
+    
+    
+    .btn-app {
+        align-content: center;
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+        
+        
+    }
+    
+    .app-screen{width: 40%;}
+  . steps-box:first-child{
+ 
+    text-align: center;
+    
+}
+    
+    .plan-price{font-size: 100%;}
+  
+            
+ 
+.plan-box{
+       
+        width: 100%;
+        margin-left: 0%;;
+        padding: 1px;
+        margin: 5px;
+        
+
+    }
+    .box p{
+    font-size: 100%;
+    line-height: 135%;
+}
+   
+    
+    .footer-nav li,
+.Social-links li{
+    
+    display: inline-block;
+    margin-right: 16px;
+    
+    
+}
+    .Social-links {
+
+    list-style: none;
+float: none;
+
+}
+    .contact-form{
+    width: 10%;
+    margin: 0 auto;
+    font-size: 90%;
+  
+    }
+    
+    .form h2{
+        font-size: 100%;
+    }
+  
+}
+
+
+/*--- small tablet to big tablet 767 t0 1023px; */
+@media only screen and (max-width: 1023px){
+    body{font-size: 15px;}
+    section{padding:  60px 0;}
+    .long-copy{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .steps-box{
+        margin-top: 10px;
+    }
+    .steps-box:last-child{margin-top: 10px;}
+    
+    .works-steps{margin-bottom: 30px;
+    margin-top: 30px;
+    }
+    .works-steps:last-child{margin-bottom: 40px;}
+    .works-steps div p{font-size: 100%;}
+    .works-steps div{ font-size: 14px;
+      border-radius: 80%;
+    }
+    .app-screen{width: 30%;}
+    .icon-small{width: 16px;
+    margin-right: 5px;
+     
+    }
+    .city-feature{
+        font-size: 90%;
+    }
+    
+    .plan-box{
+        width: 100%;
+        margin-left: 1px;
+        padding: 5px;
+        margin: 15px;
+        
+    }
+    .plan-price{font-size: 120%;}
+
+    .contact-form{width: 60%;}
+    .row {
+        padding: 0 2%;
+    }
+    .form h2{
+        font-size: 160%;
+    }
+    section-plan{
+   margin: 0;
+        padding-left: 0;
+}
+
+/*--- big tablet to window size 1024 to 1200px; */
+@media only screen and (max-width: 1200px){
+    
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+        
+    }
+    .row {
+        padding: 0 2%;
+    }
+    
+    }
